@@ -2,12 +2,12 @@
 ```markdown
 # Paridhaan – Fashion Recommendation Platform
 
-## Overview  
+ Overview  
 Paridhaan is an advanced fashion recommendation platform designed to provide personalized clothing suggestions based on user preferences and behavior. Built using **Node.js**, **Express.js**, and **EJS**, the platform leverages a **machine learning algorithm** to analyze user data and recommend clothing items that align with their style and budget. The project aims to streamline the online shopping experience by offering curated and dynamic recommendations.
 
 ---
 
-## Features  
+Features  
 ### ✅ **Machine Learning-Based Recommendations**  
 - Developed a machine learning model to analyze user behavior and provide tailored clothing suggestions.  
 - Real-time updates based on user interactions and changing preferences.  
