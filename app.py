@@ -8,11 +8,11 @@ import json
 app = Flask(__name__)
 
 # Load the trained model
-model_path = "C:/Users/Rishabh/Music/7th sem Major Project/Project/Backend/my_clothing_recommendation_model.h5"  # Update with your actual model path
+model_path = "C:/Users/Shashwat/Music/7th sem Major Project/Project/Backend/my_clothing_recommendation_model.h5"  # Update with your actual model path
 model = load_model(model_path)
 
 # Load encoders and other metadata
-with open("C:/Users/Rishabh/Music/7th sem Major Project/Project/Backend/label_encoders.json", "r") as file:
+with open("C:/Users/Shashwat/Music/7th sem Major Project/Project/Backend/label_encoders.json", "r") as file:
     label_encoders = json.load(file)
 
 # Rebuild the LabelEncoder objects
@@ -26,7 +26,7 @@ for key, values in label_encoders.items():
 DUMMY_IMAGE_FEATURES = np.zeros((1, model.input_shape[0][1]))
 
 # Dynamically load image names from the folder
-image_folder_path = "C:/Users/Rishabh/Music/7th sem Major Project/Project/Backend/downloaded_images-20241123T010413Z-001/downloaded_images"  # Update with your actual folder path
+image_folder_path = "C:/Users/Shashwat/Music/7th sem Major Project/Project/Backend/downloaded_images-20241123T010413Z-001/downloaded_images"  # Update with your actual folder path
 image_names = sorted(os.listdir(image_folder_path))  # Get all image names in the folder and sort them
 
 
